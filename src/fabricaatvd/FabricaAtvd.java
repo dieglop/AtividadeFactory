@@ -20,10 +20,15 @@ public class FabricaAtvd {
         Igarrafa vinho;
         Igarrafa refrigerante;
    
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Informe um volume");
+        float capacidade = sc.nextFloat();   
+        
         agua = fab.criaGarrafa(20);
         vinho = fab.criaGarrafa(2);
-        refrigerante = fab.criaGarrafa(0.5f);
+        refrigerante = fab.criaGarrafa(capacidade);
         
+        refrigerante.Encher();
         refrigerante.Encher();
         refrigerante.Encher();
         refrigerante.Encher();
