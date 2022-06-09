@@ -14,7 +14,7 @@ public class Garrafao implements Igarrafa{
     @Override
     public void Encher() {
         if(reuso == 2){
-            System.out.println("O garrafão precisa ser reciclado!");
+            System.out.println("O garrafao precisa ser reciclado!");
         }else{
             reuso++;
         }
@@ -23,7 +23,7 @@ public class Garrafao implements Igarrafa{
     @Override
     public void Reciclar() {
        reuso = 0;
-        System.out.println("Garrafão reciclado com sucesso!");
+        System.out.println("Garrafao reciclado com sucesso!");
     }
     
 }

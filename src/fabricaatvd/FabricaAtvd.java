@@ -5,6 +5,7 @@
  */
 package fabricaatvd;
 
+import java.util.Locale;
 import java.util.Scanner;
 
 public class FabricaAtvd {
@@ -15,14 +16,15 @@ public class FabricaAtvd {
     public static void main(String[] args) {
        
         Fabrica fab = new Fabrica();
-        
+        final var regiaoLocal = new Locale("en", "US");
+
         Igarrafa agua;
         Igarrafa vinho;
         Igarrafa refrigerante;
    
         Scanner sc = new Scanner(System.in);
-        System.out.println("Informe um volume");
-        float capacidade = sc.nextFloat();   
+        System.out.println("Informe um volume: ");
+        float capacidade = sc.useLocale(regiaoLocal).nextFloat();   
         
         agua = fab.criaGarrafa(20);
         vinho = fab.criaGarrafa(2);
