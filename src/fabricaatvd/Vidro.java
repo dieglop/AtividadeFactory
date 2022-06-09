@@ -12,7 +12,7 @@ public class Vidro implements Igarrafa {
     @Override
     public void Encher() {
         if (reuso == 3){
-            System.out.println("A garrafa deve ser reciclada!");
+            System.out.println("A garrafa de vidro deve ser reciclada!");
         }else{
             reuso++;
         }
@@ -22,7 +22,7 @@ public class Vidro implements Igarrafa {
     @Override
     public void Reciclar() {
        reuso = 0;
-        System.out.println("A garrafa foi reciclada com sucesso!");
+        System.out.println("A garrafa de vidro foi reciclada com sucesso!");
     }
     
 }
